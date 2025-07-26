@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import MobileNavbar from './MobileNavBar';
+import MobileNavbar from './MobileNavbar.jsx';
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
 
