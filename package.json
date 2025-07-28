@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node spa-deploy-fix.js",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx",
     "format": "prettier --write .",
-    "predeploy": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

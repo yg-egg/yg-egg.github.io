@@ -1,51 +1,30 @@
-import { useState } from 'react';
+export default function FlexCard({ photo, link, wide = false }) {
+  const containerStyle = {
+    width: '100%',
+    maxWidth: wide ? '100%' : '300px',
+    margin: '0 auto',
+    borderRadius: '12px',
+    overflow: 'hidden',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+  };
 
-export default function FlexCard({ photo, link }) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleClick = () => {
-    if (link) window.open(link, '_blank', 'noopener,noreferrer');
+  const imageStyle = {
+    width: '100%',
+    height: 'auto',
+    objectFit: 'contain',
+    borderRadius: '12px',
+    display: 'block',
+    maxHeight: wide ? 'none' : '500px',
   };
 
   return (
-    <div
-      onClick={handleClick}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{
-        ...styles.card,
-        transform: isHovered ? 'scale(1.035)' : 'scale(1)',
-        transition: 'transform 0.2s ease-in-out',
-      }}
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={containerStyle}
     >
-      <div style={styles.imageWrapper}>
-        <img src={photo} alt="branded content" style={styles.image} />
-      </div>
-    </div>
+      <img src={photo} alt="" style={imageStyle} />
+    </a>
   );
 }
-
-const styles = {
-  card: {
-    backgroundColor: 'rgba(0, 0, 0, 0.55)',
-    borderRadius: '12px',
-    overflow: 'hidden',
-    cursor: 'pointer',
-    display: 'inline-block', // important for masonry effect
-    marginBottom: '20px',
-    width: '100%',
-    transition: 'transform 0.2s ease-in-out',
-  },
-  imageWrapper: {
-    position: 'relative',
-    width: '100%',
-    aspectRatio: '9 / 16', // natural vertical aspect ratio
-  },
-  image: {
-    position: 'absolute',
-    inset: 0,
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  },
-};
