@@ -21,6 +21,7 @@ const logos = [
 const ContactPage = () => {
   return (
     <div style={styles.container}>
+      <h1 style={styles.heading}>Ideas start with a hello:</h1>
       <a href="mailto:mgchelle93@gmail.com" style={styles.email}>
         mgchelle93@gmail.com
       </a>
@@ -45,12 +46,12 @@ const styles = {
     color: 'white',
   },
   heading: {
-    fontSize: '2.5rem',
+    fontSize: '2.25rem',
     marginBottom: '10px',
   },
   email: {
     display: 'inline-block',
-    fontSize: '1.25rem',
+    fontSize: '2rem',
     marginBottom: '40px',
     color: '#ffffff',
     textDecoration: 'underline',
@@ -73,7 +74,6 @@ const styles = {
     maxHeight: '60px',
     maxWidth: '100%',
     objectFit: 'contain',
-    // filter: 'brightness(0) invert(1)',
   },
 };
 

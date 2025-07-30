@@ -72,7 +72,40 @@
   border-radius: 8px;
 }
 
-@media (max-width: 900px) {
+.awards-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  overflow: hidden;
+}
+
+.award-image {
+  height: auto;
+  width: auto;
+  max-height: 500px;
+  display: block;
+}
+
+/* Ensure they don't wrap or overflow viewport */
+.awards-section img {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .awards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .award-image {
+    max-width: 100%;
+    max-height: none;
+    width: 100%;
+    height: auto;
+  }
+
   .story-card {
     flex-direction: column;
     align-items: center;

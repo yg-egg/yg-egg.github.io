@@ -1,6 +1,9 @@
 import './HomePage.css';
 import profileImg from '../assets/yg-profile.avif';
 
+import awardLeftImage from '../assets/awards/awards-left.png';
+import awardRightImage from '../assets/awards/awards-right.png';
+
 function HomePage() {
   return (
     <div className="homepage-container">
@@ -39,6 +42,11 @@ function HomePage() {
           <p>Yimin is currently developing a feature animation film "Love Struck."</p>
         </div>
         <img src={profileImg} alt="Yimin Gu" className="profile-photo" />
+      </div>
+
+      <div className="awards-section">
+        <img src={awardLeftImage} alt="Awards Left" className="award-image" />
+        <img src={awardRightImage} alt="Awards Right" className="award-image" />
       </div>
     </div>
   );
