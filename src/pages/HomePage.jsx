@@ -11,6 +11,7 @@ function HomePage() {
         <iframe
           src="https://www.youtube.com/embed/3_mT9YFcbBk?autoplay=1&mute=1&controls=0&loop=1&playlist=3_mT9YFcbBk&modestbranding=1&rel=0"
           frameBorder="0"
+          loading='lazy'
           allow="autoplay; fullscreen"
           allowFullScreen
         ></iframe>
