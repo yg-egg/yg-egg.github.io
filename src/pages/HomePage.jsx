@@ -46,8 +46,8 @@ function HomePage() {
       </div>
 
       <div className="awards-section">
-        <img src={awardLeftImage} alt="Awards Left" className="award-image" />
-        <img src={awardRightImage} alt="Awards Right" className="award-image" />
+        <img src={awardLeftImage} alt="Grid of awards received by Yimin Gu (left)" className="award-image" />
+        <img src={awardRightImage} alt="Grid of awards received by Yimin Gu (right)" className="award-image" />
       </div>
     </div>
   );
