@@ -8,7 +8,6 @@ import swimImage from '../assets/fiction/swim.jpg';
 import ubuntuImage from '../assets/fiction/ubuntu.jpeg';
 import zmanImage from '../assets/fiction/zman.jpg';
 
-
 const fictions = [
   {
     role: 'Director',
@@ -20,14 +19,16 @@ const fictions = [
   {
     role: 'Assistant Production Coordinator',
     title: 'Let\s Scare Julie',
-    summary: 'When a group of teen girls sets out to scare their reclusive new neighbor, what seemed like a simple prank goes horribly wrong.',
+    summary:
+      'When a group of teen girls sets out to scare their reclusive new neighbor, what seemed like a simple prank goes horribly wrong.',
     photo: letsImage,
     link: 'https://youtu.be/BCjAtp9nYzY',
   },
   {
     role: 'Editor',
     title: 'Z Man',
-    summary: 'After a 7-year-old boy witnesses a crime in his South Central neighborhood, he dresses up as a superhero to ensure the safety of his community.',
+    summary:
+      'After a 7-year-old boy witnesses a crime in his South Central neighborhood, he dresses up as a superhero to ensure the safety of his community.',
     photo: zmanImage,
     link: 'https://youtu.be/PCwkqGIzekQ',
   },
@@ -51,7 +52,7 @@ const fictions = [
     summary: 'Winner of Best Horror at LA Shorts.',
     photo: onceImage,
     link: 'https://youtu.be/rqD05nfdIxE',
-  }
+  },
 ];
 
 export default function FictionPage() {

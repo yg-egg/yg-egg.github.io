@@ -19,11 +19,7 @@ export default function FilmCard({ photo, role, title, summary, notes, link }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div style={styles.imageWrapper}>
-        <img
-          src={photo}
-          alt={title}
-          style={styles.image}
-        />
+        <img src={photo} alt={title} style={styles.image} />
       </div>
       <small style={styles.role}>{role}</small>
       <h2 style={styles.title}>{title}</h2>

@@ -13,25 +13,57 @@ import iden3 from '../assets/branded/iden3.png';
 
 const brandedItems = [
   { id: 'b10', photo: iden3, link: 'https://youtu.be/tHOQO6A3GX0', wide: true },
-  { id: 'b1', photo: chunkyImage, link: 'https://youtube.com/shorts/NPvd839UTX0?feature=share', wide: false },
-  { id: 'b2', photo: vintageImage, link: 'https://youtube.com/shorts/wGlbdgs7_iw?feature=share', wide: false },
-  { id: 'b3', photo: pegasusImage, link: 'https://youtube.com/shorts/uNOtnonsDEM?feature=share', wide: false },
-  { id: 'b6', photo: flyeaseImage, link: 'https://youtube.com/shorts/3h25Ilu7HnU?feature=share', wide: false },
+  {
+    id: 'b1',
+    photo: chunkyImage,
+    link: 'https://youtube.com/shorts/NPvd839UTX0?feature=share',
+    wide: false,
+  },
+  {
+    id: 'b2',
+    photo: vintageImage,
+    link: 'https://youtube.com/shorts/wGlbdgs7_iw?feature=share',
+    wide: false,
+  },
+  {
+    id: 'b3',
+    photo: pegasusImage,
+    link: 'https://youtube.com/shorts/uNOtnonsDEM?feature=share',
+    wide: false,
+  },
+  {
+    id: 'b6',
+    photo: flyeaseImage,
+    link: 'https://youtube.com/shorts/3h25Ilu7HnU?feature=share',
+    wide: false,
+  },
   { id: 'b9', photo: iden2, link: 'https://youtu.be/b6ERQa34Ef4', wide: true },
   { id: 'b8', photo: idenfullImage, link: 'https://youtu.be/V1MQxegGrj8', wide: true },
-  { id: 'b4', photo: jordantwoImage, link: 'https://youtube.com/shorts/PdqY6LnS8FI?feature=share', wide: false },
-  { id: 'b5', photo: jordanImage, link: 'https://youtube.com/shorts/KJ3THD0YZH4?feature=share', wide: false },
-  { id: 'b7', photo: dunkImage, link: 'https://youtube.com/shorts/u4ir8jjZdG8?feature=share', wide: false },
+  {
+    id: 'b4',
+    photo: jordantwoImage,
+    link: 'https://youtube.com/shorts/PdqY6LnS8FI?feature=share',
+    wide: false,
+  },
+  {
+    id: 'b5',
+    photo: jordanImage,
+    link: 'https://youtube.com/shorts/KJ3THD0YZH4?feature=share',
+    wide: false,
+  },
+  {
+    id: 'b7',
+    photo: dunkImage,
+    link: 'https://youtube.com/shorts/u4ir8jjZdG8?feature=share',
+    wide: false,
+  },
 ];
 
 export default function BrandedContentPage() {
   return (
     <div style={styles.grid}>
       {brandedItems.map(({ id, photo, link, wide }) => (
-        <div
-          key={id}
-          style={wide ? styles.fullSpan : styles.centeredGridItem}
-        >
+        <div key={id} style={wide ? styles.fullSpan : styles.centeredGridItem}>
           <FlexCard photo={photo} link={link} wide={wide} />
         </div>
       ))}

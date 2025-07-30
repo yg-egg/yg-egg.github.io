@@ -18,12 +18,7 @@ export default function FlexCard({ photo, link, wide = false }) {
   };
 
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={containerStyle}
-    >
+    <a href={link} target="_blank" rel="noopener noreferrer" style={containerStyle}>
       <img src={photo} alt="" style={imageStyle} />
     </a>
   );
